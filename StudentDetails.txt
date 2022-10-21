@@ -1,0 +1,46 @@
+package com.example;
+import java.util.*;
+ class school {
+	 void SchoolDetails() {
+	 int id;
+	 String Name;
+	 int Bengali=60;
+	 int Math=70;
+	  int English=80;
+	  int History=90;
+	  int Geography=55;
+	  int sum1=(Bengali+Math+English+History+Geography);
+	  System.out.println(sum1);
+	  
+
+	 }
+	 
+}
+ class college extends school{
+	 void CollegeDetails() {
+		 int id;
+		 String Name;
+		 int Java=90;
+		 int DBMS=60;
+		 int Networking=50;
+		 int PYTHON=80;
+		 int sum2=(Java+DBMS+Networking+PYTHON);
+		 System.out.println(sum2);
+		
+	 }
+ }
+  public class StudentDetails extends college{
+	 
+	 public static void main(String args[])
+	 {
+		college c1= new college();
+		school s1= new school();
+		System.out.println("------Enter The Student Details-----");
+		System.out.println("ID:"+224+"Name:"+"Swarupa");
+		c1.CollegeDetails();
+		s1.SchoolDetails();
+	
+		 
+	 }
+	 
+ }
